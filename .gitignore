@@ -3759,3 +3759,18 @@ __pycache__/main.cpython-310.pyc
 __pycache__/sqlConnection.cpython-310.pyc
 __pycache__/warnIssueSummarizer.cpython-310.pyc
 config.py
+testfolder/codeql-pack.lock.yml
+testfolder/codeql.py
+testfolder/myquery.ql
+testfolder/qlpack.yml
+testfolder/results.csv
+testfolder/.cache/lock
+testfolder/.cache/size
+testfolder/.cache/data/13/93/1393e338298e970eaf1af1a93cef6f4e9c9203cf
+testfolder/.cache/data/6b/a7/6ba7434136e025dbf71be38ae33b0eaf7424731b
+testfolder/.cache/data/9a/71/9a71b8a6c4ef8f27fdaf3df3282c903b1154d970
+testfolder/.cache/data/9e/47/9e478180a4fb355f4674a7f7179bfb595e762515
+testfolder/.cache/data/a4/27/a4275a4c961b931d6ddda6cb3593b8793a19f0b9
+testfolder/.cache/data/c1/9d/c19d4d4a0cdcdef176b35c1684b472cce9461226
+testfolder/.cache/data/d9/57/d957408400214b4ec4532900f3ed6eba4556fbcd
+fixScreenNames - Shortcut.lnk

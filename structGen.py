@@ -105,7 +105,8 @@ def decideOnName(element,parent):
             hasBeenChanged = False 
             elementDict = {
                     "Name":"",
-                    "Actions":[],
+                    "ActionName":"",
+                    "Statements":[],
                     "Subelements":[],   
                 }
             if("As" in subelement):
@@ -116,14 +117,11 @@ def decideOnName(element,parent):
                 decideOnName(element[subelement],elementDict)
                 
             else:
-                actionDict ={
-                    "ActionName":"",
-                    "Statements":[]
-                }
                 if(re.search(pattern, subelement)):
                     if(element[subelement] == "="):
                         continue
                     #here we search for the "On" properties
+
                     #first character is always "=" followed by the name of the function and then an opening bracket or a commented-out function
                     # either =something()
                     # or = /* for multiline comments
@@ -147,6 +145,7 @@ def decideOnName(element,parent):
                             substring = element[subelement][0:findEndOfFunction(element[subelement])]
                             #try to get get a single function call written in the code
                         except:
+                            print("element[subelement]",element[subelement])
                             raise Exception()
                         functionDict.append(substring)
                         #append it to the function dict and remove it from further processing
@@ -209,11 +208,6 @@ def decideOnName(element,parent):
 
                         # elif(functionDict[idx]).startswith("Or("): #or ||
                         #     print() 
-                        elif(functionDict[idx].startswith("Patch(")):
-                            importantLines.append(functionDict[idx])
-
-                        elif(functionDict[idx].startswith("Select(")):
-                            importantLines.append(functionDict[idx])
 
                         elif(functionDict[idx]).startswith("Switch("): 
                             firstIfLocationTuple = re.search(r''+"Switch"+r'',functionDict[idx]).span()
@@ -285,6 +279,29 @@ def decideOnName(element,parent):
                             
                             importantLines.append(functionComponents)
 
+                        #DATA SOURCE OPERATIONS ________________________________
+                        # not as important for control flow graph
+
+                        # elif(functionDict[idx]).startswith("Remove("):
+                            
+                        #     print() 
+
+                        # elif(functionDict[idx]).startswith("RemoveIf("):
+                        #     print() 
+
+                        # elif(functionDict[idx]).startswith("Patch("):
+                        #     print() 
+
+                        # elif(functionDict[idx]).startswith("Submitform("):
+                        #     print() 
+
+                        # elif(functionDict[idx]).startswith("Update("):
+                        #     print() 
+
+                        # elif(functionDict[idx]).startswith("UpdateIf("):
+                        #     print() 
+
+
                         #NAVIGATION ________________________________    
                         elif(functionDict[idx].startswith("Back(") or functionDict[idx].startswith("Exit(")):
                             #not much to do, just take as is
@@ -303,11 +320,12 @@ def decideOnName(element,parent):
 
                     #TODO group summarizer feature would also be very helpful
                     lines = (element[subelement].replace("\n","")).split(";")
-                    actionDict["ActionName"] = subelement
-                    
+                    parent["ActionName"] = subelement
+                                
+
+
                     if(not importantLines == []):
-                        actionDict["Statements"] = importantLines
-                    parent["Actions"].append(actionDict)
+                        parent["Statements"] = importantLines
                 elif(subelement == "Visible"):
                     if(not element[subelement] == "=false"):
                         parent["Visible"] = element[subelement].replace("=","")
@@ -319,12 +337,15 @@ def decideOnName(element,parent):
                 
                 else:
                     continue
+            # print(elementDict)
             if(hasBeenChanged):
-                if(not elementDict["Actions"]==[] or not elementDict["Subelements"]==[]):
-                    if(elementDict["Actions"]==[]):
-                        elementDict.pop("Actions",None)
+                if(not elementDict["Statements"]==[] or not elementDict["Subelements"]==[]):
+                    if(elementDict["Statements"]==[]):
+                        elementDict.pop("Statements",None)
                     if(elementDict["Subelements"]==[]):
                         elementDict.pop("Subelements",None)
+                    if(elementDict["ActionName"]==""):
+                        elementDict.pop("ActionName",None)
                     parent["Subelements"].append(elementDict)
 
 Loader.add_constructor(None, construct_undefined)
@@ -372,15 +393,16 @@ def generateCFG(appID):
                 continue
             main={
                 "Name":key,
-                "Actions":[],
+                "ActionName":"",
+                "Statements":[],
                 "Subelements":[],  
             } 
-            # try:
-            decideOnName(parsed_yaml[key],main)
-            # except Exception as e:
-            #     print("Screen was",screen)
-            #     print(e)
-            #     raise Exception()
+            try:
+                decideOnName(parsed_yaml[key],main)
+            except Exception as e:
+                print("Screen was",screen)
+                print(e)
+                raise Exception()
 
             # print(json.dumps(main,indent = 4))
 
@@ -395,11 +417,11 @@ counter = 0
 print("Creating Jsons, please wait...")
 for name in os.listdir(".\BlobFolder"):
     appID = name.split(" ")[0]
-     # try:
-    generateCFG(appID)
-    # except:
-        # print(appID)
-     
+    try:
+        generateCFG(appID)
+    except:
+        print(appID)
+        exit()
     counter += 1
 
 # generateCFG("44b9e688-36dc-4f5f-a3fc-c7fed42debcc.msapp")

@@ -1,8 +1,8 @@
-def test1():
-    print("asd")
+import re
 
-def test2():
-    print("asd")
+pattern = r'[a-z_A-Z0-9]+\([^\)]*?'
 
-funcs = [test1,test2]
 
+myString = "test(func(),param)"
+
+print(re.findall(pattern,myString))

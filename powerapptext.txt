@@ -1,0 +1,71 @@
+For the purpose of the Proof of Concept only the following functions will be considered
+Variable Declaration
+-	Set
+-	UpdateContext
+Logical Operators
+-	Switch
+-	If / IfError
+-	And or &&
+o	=If(And(!IsEmpty(DataCardValue1.SelectedItems), !IsBlank(DataCardValue2.Text), !IsEmpty(InputOwners_1.SelectedItems), !IsBlank(First(DataCardValue7.SelectedItems).Value),!IsBlank(DataCardValue13.Text)), Edit, Disabled)
+o	
+-	Or or ||
+-	Not or !
+-	StartsWith
+-	EndsWith
+Information Functions
+-	IsBlank
+-	(IsBlankOrError)
+-	IsEmpty
+-	(IsError)
+-	IsMatch
+-	IsNumeric
+-	IsToday
+-	IsUTCToday
+-	IsType
+Does it make sense to have code interpret these functions?
+I don’t think so since they only deliver a true or a false statement
+
+Data Source Operations
+-	Patch
+-	Remove / RemoveIf
+-	SubmitForm
+-	Update / UpdateIf
+Navigation
+-	Back
+-	Exit
+-	Navigate
+
+Features done
+Warn Issue Summarizer
+Used Connector functions listing
+
+Things I can do 
+Check deprecated status
+
+
+
+My Goal is not to create a CFG but instead convert a low code app such as a power app into code such as python code and then give it to CodeQL
+
+
+Creating a database from python code works now in the vm
+Analysing also yields expected results
+Next task
+Create a method of transforming a power app screen into
+
+
+Global dataflow is an entire program
+Local dataflow is a method / callable 
+	A power app is a python script, a screen is a python method.
+
+How to navigate between screens?
+I have to remember my prev. screen for when a back() comes
+	Not only that, I have to remember a stack full of backs. Lets say a user goes from screen A to Screen B and then to Screen C. In Screen C he presses Back() thereby going back to screen B. On Screen B he also presses Back(). This Back() does not lead to Screen C but to the Screen A. 
+	Essentially like a stack and every Back() is like a Pop()
+	Prev. screen is a global variable of type list / stack
+
+
+
+TODO 20.06
+Testen wie import vom DFA interpretiert wird. Wichtig für collections. Collections können in der Power App definierte Objekte sein oder auch von außen per DataSource reingeladene Informationen sein. Wir nehmen einfach an, dass wir nicht genau wissen welche Daten in einer Collection stehen.
+
+

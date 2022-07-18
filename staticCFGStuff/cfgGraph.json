@@ -1,0 +1,214 @@
+{
+  "name": "clustertest.py",
+  "directed": true,
+  "strict": false,
+  "label": "test.py",
+  "_subgraph_cnt": 2,
+  "objects": [
+    {
+      "name": "clusterfib",
+      "label": "fib",
+      "_gvid": 0,
+      "nodes": [
+        13,14,15,16
+      ],
+      "edges": [
+        15,14,13,12
+      ]
+    },
+    {
+      "name": "clustersomething",
+      "label": "something",
+      "_gvid": 1,
+      "nodes": [
+        17
+      ]
+    },
+    {
+      "_gvid": 2,
+      "name": "1",
+      "label": "def fib():...\nfib_gen = fib()\n"
+    },
+    {
+      "_gvid": 3,
+      "name": "1_calls",
+      "label": "fib",
+      "shape": "box"
+    },
+    {
+      "_gvid": 4,
+      "name": "9",
+      "label": "for _ in range(10):\n"
+    },
+    {
+      "_gvid": 5,
+      "name": "10",
+      "label": "next(fib_gen)\n"
+    },
+    {
+      "_gvid": 6,
+      "name": "10_calls",
+      "label": "next",
+      "shape": "box"
+    },
+    {
+      "_gvid": 7,
+      "name": "11",
+      "label": "a = 1\nif a > 2:\n"
+    },
+    {
+      "_gvid": 8,
+      "name": "12",
+      "label": "print('sth')\n"
+    },
+    {
+      "_gvid": 9,
+      "name": "12_calls",
+      "label": "print",
+      "shape": "box"
+    },
+    {
+      "_gvid": 10,
+      "name": "13",
+      "label": "def something():...\n"
+    },
+    {
+      "_gvid": 11,
+      "name": "14",
+      "label": "exit()\n"
+    },
+    {
+      "_gvid": 12,
+      "name": "14_calls",
+      "label": "exit",
+      "shape": "box"
+    },
+    {
+      "_gvid": 13,
+      "name": "3",
+      "label": "a, b = 0, 1\n"
+    },
+    {
+      "_gvid": 14,
+      "name": "4",
+      "label": "while True:\n"
+    },
+    {
+      "_gvid": 15,
+      "name": "5",
+      "label": "yield a\n"
+    },
+    {
+      "_gvid": 16,
+      "name": "7",
+      "label": "a, b = b, a + b\n"
+    },
+    {
+      "_gvid": 17,
+      "name": "16",
+      "label": "c = 0\nd = 0\nc + d\n"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 2,
+      "head": 3,
+      "label": "calls",
+      "style": "dashed"
+    },
+    {
+      "_gvid": 5,
+      "tail": 5,
+      "head": 6,
+      "label": "calls",
+      "style": "dashed"
+    },
+    {
+      "_gvid": 4,
+      "tail": 5,
+      "head": 4,
+      "label": ""
+    },
+    {
+      "_gvid": 2,
+      "tail": 4,
+      "head": 5,
+      "label": "range(10)"
+    },
+    {
+      "_gvid": 8,
+      "tail": 8,
+      "head": 9,
+      "label": "calls",
+      "style": "dashed"
+    },
+    {
+      "_gvid": 9,
+      "tail": 8,
+      "head": 10,
+      "label": ""
+    },
+    {
+      "_gvid": 6,
+      "tail": 7,
+      "head": 8,
+      "label": "a > 2"
+    },
+    {
+      "_gvid": 11,
+      "tail": 11,
+      "head": 12,
+      "label": "calls",
+      "style": "dashed"
+    },
+    {
+      "_gvid": 10,
+      "tail": 11,
+      "head": 10,
+      "label": ""
+    },
+    {
+      "_gvid": 7,
+      "tail": 7,
+      "head": 11,
+      "label": "(a <= 2)"
+    },
+    {
+      "_gvid": 3,
+      "tail": 4,
+      "head": 7,
+      "label": ""
+    },
+    {
+      "_gvid": 1,
+      "tail": 2,
+      "head": 4,
+      "label": ""
+    },
+    {
+      "_gvid": 15,
+      "tail": 16,
+      "head": 14,
+      "label": ""
+    },
+    {
+      "_gvid": 14,
+      "tail": 15,
+      "head": 16,
+      "label": ""
+    },
+    {
+      "_gvid": 13,
+      "tail": 14,
+      "head": 15,
+      "label": "True"
+    },
+    {
+      "_gvid": 12,
+      "tail": 13,
+      "head": 14,
+      "label": ""
+    }
+  ]
+}

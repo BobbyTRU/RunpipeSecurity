@@ -3759,18 +3759,72 @@ __pycache__/main.cpython-310.pyc
 __pycache__/sqlConnection.cpython-310.pyc
 __pycache__/warnIssueSummarizer.cpython-310.pyc
 config.py
-testfolder/codeql-pack.lock.yml
-testfolder/codeql.py
-testfolder/myquery.ql
-testfolder/qlpack.yml
-testfolder/results.csv
-testfolder/.cache/lock
-testfolder/.cache/size
-testfolder/.cache/data/13/93/1393e338298e970eaf1af1a93cef6f4e9c9203cf
-testfolder/.cache/data/6b/a7/6ba7434136e025dbf71be38ae33b0eaf7424731b
-testfolder/.cache/data/9a/71/9a71b8a6c4ef8f27fdaf3df3282c903b1154d970
-testfolder/.cache/data/9e/47/9e478180a4fb355f4674a7f7179bfb595e762515
-testfolder/.cache/data/a4/27/a4275a4c961b931d6ddda6cb3593b8793a19f0b9
-testfolder/.cache/data/c1/9d/c19d4d4a0cdcdef176b35c1684b472cce9461226
-testfolder/.cache/data/d9/57/d957408400214b4ec4532900f3ed6eba4556fbcd
-fixScreenNames - Shortcut.lnk
+BlobFolder/0435b865-dccf-40e5-ad9d-20c850a278bc.msapp folder/DataSourceSummary.json
+BlobFolder/0813ecc0-45c9-4bdc-a30f-a09e1e47217d.msapp folder/DataSourceSummary.json
+BlobFolder/0b5f45bb-c3ff-4471-8e1d-88527f5470cd.msapp folder/DataSourceSummary.json
+BlobFolder/0c2b902d-11e3-4666-a23c-628352f080d1.msapp folder/DataSourceSummary.json
+BlobFolder/0c4beb96-907c-4aa3-91f4-e28b48becb74.msapp folder/DataSourceSummary.json
+BlobFolder/0f7b6a25-9f49-4325-b513-87aa984bd256.msapp folder/DataSourceSummary.json
+BlobFolder/12824582-9e1a-451d-aab0-b1564cf63801.msapp folder/DataSourceSummary.json
+BlobFolder/17baa0fd-f64b-4eb0-a2fa-f86d66433cbf.msapp folder/DataSourceSummary.json
+BlobFolder/1abfbff4-4031-4abc-a7db-1f9c9da7b288.msapp folder/DataSourceSummary.json
+BlobFolder/1c38f0bd-ef06-46f5-a9a9-5536432640e8.msapp folder/DataSourceSummary.json
+BlobFolder/1cf93525-4355-490a-9be3-508f60280fd5.msapp folder/DataSourceSummary.json
+BlobFolder/1d2522ba-7ac4-4764-ab41-2a98650bd120.msapp folder/DataSourceSummary.json
+BlobFolder/1d488b7a-c019-4954-a85e-513d5fcb0009.msapp folder/DataSourceSummary.json
+BlobFolder/1dbbe810-e313-465c-94dd-eba711b903dc.msapp folder/DataSourceSummary.json
+BlobFolder/2111b638-8336-494a-a070-9a9a03650b1a.msapp folder/DataSourceSummary.json
+BlobFolder/220a46fd-f488-4f70-b50e-990fa09b3063.msapp folder/DataSourceSummary.json
+BlobFolder/277eef37-0013-4947-9024-680a1524bd14.msapp folder/DataSourceSummary.json
+BlobFolder/31c43f9d-bbe7-444c-b546-b58265327472.msapp folder/DataSourceSummary.json
+BlobFolder/3595c05b-daef-4380-a713-bae4d12d6026.msapp folder/DataSourceSummary.json
+BlobFolder/38e584ce-fe4b-4f25-8895-77e818d0a70f.msapp folder/DataSourceSummary.json
+BlobFolder/3aa48b98-8113-4b43-b323-1a8f258898b6.msapp folder/DataSourceSummary.json
+BlobFolder/3d4a1d46-ac4f-41c6-91c0-1cbda5fc94e7.msapp folder/DataSourceSummary.json
+BlobFolder/3e39d2d0-3537-4dfb-acab-153431f51d95.msapp folder/DataSourceSummary.json
+BlobFolder/422414e0-10ef-4749-b1bc-ce15cf6f1f70.msapp folder/DataSourceSummary.json
+BlobFolder/44b9e688-36dc-4f5f-a3fc-c7fed42debcc.msapp folder/DataSourceSummary.json
+BlobFolder/59b0728e-8896-43e6-bd6b-67c8e15aa139.msapp folder/DataSourceSummary.json
+BlobFolder/5e4de92d-5959-405a-9707-3e02e074e590.msapp folder/DataSourceSummary.json
+BlobFolder/6aafbf1f-5d79-4877-9803-cd7bfd721fe8.msapp folder/DataSourceSummary.json
+BlobFolder/6df5e182-20db-45e0-a1ff-7388c3d17c1b.msapp folder/DataSourceSummary.json
+BlobFolder/6e0ee1cf-ef7d-4102-9180-bf22701c8a0b.msapp folder/DataSourceSummary.json
+BlobFolder/6f143fe4-997e-469e-aad8-e2d2cd3cf18d.msapp folder/DataSourceSummary.json
+BlobFolder/6f3fcd80-437d-4635-8157-0b473e8651e6.msapp folder/DataSourceSummary.json
+BlobFolder/6f8f70eb-c3cf-4e7b-8ef0-12d90faaa98c.msapp folder/DataSourceSummary.json
+BlobFolder/6fd58651-8bc1-41c7-8c79-b2aa68e39873.msapp folder/DataSourceSummary.json
+BlobFolder/6fe4ec61-5a4b-4f4f-9015-e4cb47b1f51e.msapp folder/DataSourceSummary.json
+BlobFolder/70858296-b8a0-4ccb-b044-51b3b95f1f1a.msapp folder/DataSourceSummary.json
+BlobFolder/71495ed7-f30b-46cb-a70d-338b06d987d8.msapp folder/DataSourceSummary.json
+BlobFolder/776246ff-e576-4bb6-9aac-d9694bdc4b10.msapp folder/DataSourceSummary.json
+BlobFolder/77bbb5c4-30e4-4355-b0b1-2d6cf90c295d.msapp folder/DataSourceSummary.json
+BlobFolder/7bd887a7-dbb7-4bba-b50e-5473a6bc1478.msapp folder/DataSourceSummary.json
+BlobFolder/7bfa3b34-59f0-4be0-9b08-d4a030a19254.msapp folder/DataSourceSummary.json
+BlobFolder/8a56bc7b-d20a-4b4c-bd1d-8e6c89f063b0.msapp folder/DataSourceSummary.json
+BlobFolder/8ba5d309-cc99-4586-bf1a-795747776b9f.msapp folder/DataSourceSummary.json
+BlobFolder/8f9c17f7-9b70-4e65-9f2c-48bcc5c106a5.msapp folder/DataSourceSummary.json
+BlobFolder/95f67ed9-38d0-4231-9223-95b088773ec0.msapp folder/DataSourceSummary.json
+BlobFolder/98b82dc7-3d62-44d6-8dcb-4b365fba5a0f.msapp folder/DataSourceSummary.json
+BlobFolder/9aec72fe-775c-4732-ba64-a59b54497501.msapp folder/DataSourceSummary.json
+BlobFolder/9b93f7a9-2146-4ec0-a91f-2eb90d170028.msapp folder/DataSourceSummary.json
+BlobFolder/9fd68d98-eed7-4732-9408-b4cb5f04b02f.msapp folder/DataSourceSummary.json
+BlobFolder/b2bd9d7d-c7d6-4e4d-b62b-a39a3222e904.msapp folder/DataSourceSummary.json
+BlobFolder/b493f16b-719b-4e2d-872a-cd57cb395a71.msapp folder/DataSourceSummary.json
+BlobFolder/c722f723-d29d-4253-bfd3-7fe484f26522.msapp folder/DataSourceSummary.json
+BlobFolder/ce71a715-5bb1-4ec8-bf7f-b1650cab16b6.msapp folder/DataSourceSummary.json
+BlobFolder/d38f485a-5a36-4ce2-a4cb-35a9ff2c29da.msapp folder/DataSourceSummary.json
+BlobFolder/d66a1ab2-62ec-4e98-bbf8-bdb54e210f94.msapp folder/DataSourceSummary.json
+BlobFolder/dbe32075-149a-4215-806f-7848763a90e1.msapp folder/DataSourceSummary.json
+BlobFolder/dc7387ac-68c0-436d-a31f-30565219b974.msapp folder/DataSourceSummary.json
+BlobFolder/dd17e24c-6dd5-4087-b129-6590003f1dff.msapp folder/DataSourceSummary.json
+BlobFolder/dfbeb9cf-51d2-461f-b16a-8add46c2984c.msapp folder/DataSourceSummary.json
+BlobFolder/e475661d-3ea9-48f8-bc09-490aabc97985.msapp folder/DataSourceSummary.json
+BlobFolder/e9f968d1-e3de-413c-805a-69db9dce8bbf.msapp folder/DataSourceSummary.json
+BlobFolder/ed8271c5-9422-4795-aeb0-d83218d19f48.msapp folder/DataSourceSummary.json
+BlobFolder/ee7f2576-3a48-4606-a735-b74d8552a5ec.msapp folder/DataSourceSummary.json
+BlobFolder/ee9b425a-97f2-45f6-90a0-717bb76381c1.msapp folder/DataSourceSummary.json
+BlobFolder/eeec4ecb-afee-4e70-a40d-3e52ee97c331.msapp folder/DataSourceSummary.json
+BlobFolder/f0edc498-5909-49a1-8634-50930cbe2918.msapp folder/DataSourceSummary.json
+BlobFolder/f1cf1fdc-95e2-494e-a30e-d885f7246b11.msapp folder/DataSourceSummary.json
+BlobFolder/fc7ac016-1111-4df0-ae9b-cdb99fcd460c.msapp folder/DataSourceSummary.json
+BlobFolder/fe38c5dc-73f8-4798-91d4-422d714aba04.msapp folder/DataSourceSummary.json

@@ -1,0 +1,57 @@
+digraph "clustertest.py" {
+	graph [label="test.py"]
+	1 [label="def fib():...
+fib_gen = fib()
+"]
+	"1_calls" [label=fib shape=box]
+	1 -> "1_calls" [label=calls style=dashed]
+	9 [label="for _ in range(10):
+"]
+	10 [label="next(fib_gen)
+"]
+	"10_calls" [label=next shape=box]
+	10 -> "10_calls" [label=calls style=dashed]
+	10 -> 9 [label=""]
+	9 -> 10 [label="range(10)"]
+	11 [label="a = 1
+if a > 2:
+"]
+	12 [label="print('sth')
+"]
+	"12_calls" [label=print shape=box]
+	12 -> "12_calls" [label=calls style=dashed]
+	13 [label="def something():...
+"]
+	12 -> 13 [label=""]
+	11 -> 12 [label="a > 2"]
+	14 [label="exit()
+"]
+	"14_calls" [label=exit shape=box]
+	14 -> "14_calls" [label=calls style=dashed]
+	14 -> 13 [label=""]
+	11 -> 14 [label="(a <= 2)"]
+	9 -> 11 [label=""]
+	1 -> 9 [label=""]
+	subgraph clusterfib {
+		graph [label=fib]
+		3 [label="a, b = 0, 1
+"]
+		4 [label="while True:
+"]
+		5 [label="yield a
+"]
+		7 [label="a, b = b, a + b
+"]
+		7 -> 4 [label=""]
+		5 -> 7 [label=""]
+		4 -> 5 [label=True]
+		3 -> 4 [label=""]
+	}
+	subgraph clustersomething {
+		graph [label=something]
+		16 [label="c = 0
+d = 0
+c + d
+"]
+	}
+}
